@@ -1,0 +1,133 @@
+/* global */
+
+.centered-text {
+  text-align: center;
+}
+
+a {
+  color: azure;
+}
+
+a:hover {
+  text-shadow: 2px 2px 5px white;
+}
+
+a.active {
+  text-decoration: underline overline red;
+  size: +5;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: aliceblue;
+  height: 100%;
+  background-image: linear-gradient(to top, darkred, purple);
+  background-attachment: scroll;
+}
+
+/* header */
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.header__nav {
+  justify-self: center;
+}
+
+.header__links {
+  justify-self: end;
+}
+
+/* main content */
+
+.content {
+  margin: auto;
+  max-width: 80%;
+}
+
+.cv__body__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-img-figure {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border: 5px;
+  border-radius: 25%;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(
+    circle,
+    darkred,
+    black,
+    black,
+    black,
+    purple
+  );
+  float: left;
+}
+
+.profile-img-figure img {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1px 10px 20px 10px;
+  border-radius: 20px;
+  margin: 10px 0px 10px 0px;
+}
+
+.card .multiple-lines-code {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  font-family: courier, monospace;
+}
+
+/* footer */
+
+.footer {
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.footer__credits {
+  margin-top: 5px;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* tables */
+
+.cv__body_header__table th,
+td {
+  padding: 0, 0, 0, 0;
+}
+.cv__body_header__table th {
+  text-align: left;
+}
+.cv__body_header__table td {
+  text-align: right;
+}
